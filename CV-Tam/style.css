@@ -107,7 +107,7 @@ h2 {
 	letter-spacing: 10px;
 	margin-left: 20%;
 	margin-top: 8%;
-	margin-bottom: 15%;
+	margin-bottom: 12%;
 }
 
 h3 {
@@ -115,11 +115,12 @@ h3 {
 	font-size: 150%;
 	text-align: center;
 	margin :auto;
-	border :2px solid;
 	border-radius: 5px;
 	padding: 40px;
 	margin: 75px;
 	margin-top: 300px;
+	background-color: white;
+	box-shadow: 0px 0px 20px 10px #303e3269;
 }
 
 #pp {
@@ -178,6 +179,7 @@ p {
 }
 
 #pOxford {
+	background-size: 60%;
 	background-image: url(img/Oxford.jpg);
 	height: 400px;
 	margin-right: 20%;
@@ -197,20 +199,41 @@ p {
 }
 
 #tvoyager,#tscout {
-	font-size: 25px;
+	
 }
+
+#linko {
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+/*.bbhobbies {
+	width: 500px;
+	height: 10px;
+}*/
 
 .bhobbies {
 	font-family: 'Dosis', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
+    padding: 10px 30px; 
 	border: 2px solid;
     border-color: black;
-    padding: 2% 6%;
-    margin: 4%;
     border-radius: 2px;
     text-decoration: none;
-    color: black;
+    color: black;transition: transform .0.2s;
+
 }
+
+.bhobbies:hover {
+	background-color: white;
+	transform: scale(1.5);
+	box-shadow: 0px 0px 20px 5px #303e3269;
+	}
+
 
 #phs1 {
 	margin-left: 20%;
@@ -225,3 +248,11 @@ p {
     box-shadow: 10px 6px 5px -1px #303e323d;
 }
 
+#pcontact {
+	font-size: 22px;
+	padding: 60px;
+	border : 2px solid;
+	border-radius: 2px;
+	margin: 30px;
+	text-align: center;
+}
