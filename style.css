@@ -60,12 +60,12 @@ body{
 	grid-row-end: 3;
 }
 
-#but_productions {
+/*#but_productions {
 	grid-column-start:4;
 	grid-column-end: 5;
 	grid-row-start: 2;
 	grid-row-end: 3;
-}
+}*/
 
 #but_compétences {
 	grid-column-start:6;
@@ -99,6 +99,10 @@ body{
 
 }
 
+.ac {
+	margin-right: 30%; 
+}
+
 h2 {
 	color: black;
 	font-family: 'Dosis', sans-serif;
@@ -110,29 +114,20 @@ h2 {
 	margin-bottom: 12%;
 }
 
-h3 {
-	color: black;
-	font-size: 150%;
-	text-align: center;
-	margin :auto;
-	border-radius: 5px;
-	padding: 40px;
-	margin: 75px;
-	margin-top: 300px;
-	background-color: white;
-	box-shadow: 0px 0px 20px 10px #303e3269;
-}
 
 #pp {
 	position: sticky;
-	top: 200px;
+	top: 120px;
+	border : solid 6px;
+	border-color: #a7c9c2;
+	width: 15%;
 	float: right;
 	margin-right: 80px;
 	margin-top: 160px;
 }
 
 p {
-	font-size: 2vw;
+	font-size: 1.8vw;
 	margin-left: 10%;
 	margin-bottom: 120px;
 	text-indent: 8.5%;
@@ -141,32 +136,44 @@ p {
 	background-color: rgb(155, 193, 185, 0.8);
 }
 
-
-#info {
-	margin-right: 60%;
-	
+h3 {
+	font-family: 'Shadows Into Light', cursive;
+    color: white;
+    font-size: 80px;
+    text-align: center;
 }
 
-#actuellement {
-	background-color: rgb(155, 193, 185, 0.8);
-	margin-right: 30%;
+.center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-#pvoyage, #pscoutisme, #pDinant, #pPalerme, #pPalma, #pOxford, .parallaxtxt {
+#pPalma, #pScoutisme, #pMusic {
 	position: static;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-#pPalma {
-	background-image: url(img/Palma.jpg);
 	height: 400px;
 	margin: 10px;
 }
 
-#pDinant {
+#pPalma {
+	background-image: url(img/Palma.jpg);
+}
+
+#pScoutisme {
+	background-image: url(img/scoutisme.jpg);
+}
+
+#pMusic {
+	background-image: url(img/piano.jpg);
+}
+
+
+
+/*#pDinant {
 	background-image: url(img/Dinant.jpg);
 	height: 400px;
 	margin-right: 10%;
@@ -183,20 +190,7 @@ p {
 	background-image: url(img/Oxford.jpg);
 	height: 400px;
 	margin-right: 20%;
-}
-
-#pscoutisme {
-	background-image: url("img/marseille.jpg");
-	height : 300px;
-	width: 60%;
-	margin-left: 10%;
-}
-
-.parallaxtxt {
-	margin: 20px;
-	text-align: center;
-	z-index: 1;
-}
+}*/
 
 #tvoyager,#tscout {
 	
@@ -211,21 +205,17 @@ p {
     height: 80px;
 }
 
-/*.bbhobbies {
-	width: 500px;
-	height: 10px;
-}*/
-
 .bhobbies {
 	font-family: 'Dosis', sans-serif;
     font-size: 20px;
     padding: 10px 30px; 
 	border: 2px solid;
-    border-color: black;
+    border-color: #a7c9c2;
+    background-color: #a7c9c2;
     border-radius: 2px;
     text-decoration: none;
-    color: black;transition: transform .0.2s;
-
+    color: black;
+    transition: transform .0.2s;
 }
 
 .bhobbies:hover {
@@ -234,6 +224,49 @@ p {
 	box-shadow: 0px 0px 20px 5px #303e3269;
 	}
 
+.hob {
+	border: 3px solid;
+    border-color: #a7c9c2;
+    border-radius: 3px;
+    margin: 30px;
+    margin-top: 200px;
+    margin-bottom: 150px;
+    padding: 45px;
+    padding-bottom: 170px;
+}
+
+.polaroid {
+	background-color: white;
+	width: 25%;
+	height: auto;
+	margin: 1%;
+	box-shadow: 10px 6px 9px -1px #303e323d;
+}
+
+.photopola {
+	width: 90%;
+	padding: 5%;
+}
+
+.textpola {
+	margin: 10px;
+	margin-left: 30px;
+	font-size: 16px;
+}
+
+#polaroidmarseille {
+	background-color: white;
+	width: 38%;
+	height: auto;
+	margin: 1%;
+	box-shadow: 10px 6px 9px -1px #303e323d;
+}
+
+.missions {
+	width: 28%;
+	margin: 15px;
+	font-size: 18px;
+}
 
 #phs1 {
 	margin-left: 20%;
@@ -241,18 +274,37 @@ p {
     box-shadow: inset 10px 6px 9px -1px #303e323d;
 }
 
-#phs2 {
+.phs2 {
 	margin-left: 4%;
     margin-right: 11%;
-    margin-top: -5%;
     box-shadow: 10px 6px 5px -1px #303e323d;
+}
+
+#phs3 {
+	width: 70%;
+	margin: 30px;
+	margin-right: 10px;
+}
+
+#dispodiplome {
+	display: flex;
+	width: 100%;
+}
+
+.bande {
+	width: 25%;
+	margin: 15px;
+	border-radius: 5px;
+	padding: 40px;
+	box-shadow: 5px 5px 10px 0px #303e323d;
 }
 
 #pcontact {
 	font-size: 22px;
 	padding: 60px;
+	padding-left: 30%;
 	border : 2px solid;
 	border-radius: 2px;
-	margin: 30px;
-	text-align: center;
+	margin: 40px;
+	/*text-align: ;
 }
